@@ -16,17 +16,17 @@ body {
     align-items: center;
     widows: 100vw;
     height: 100vh;
-    background-color: #333;
+    background-color:  #212060;
 }
 
 .container {
-    width: 800px;
+    width: 500px;
     max-width: 80%;
-    background-color: white;
+    background-color: #154290;
     padding: 10px;
     border-radius: 5px;
-
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 2px #111439;
+    
 }
 
 .btn-grid {
@@ -37,19 +37,24 @@ body {
 }
 
 .btn {
-    background-color: hsl(200, 100% , 50%);
-    border: 1px solid hsl(200, 100%, 30%);
+    background-color: #03EC70;
+    border: none;
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
+    color: #2B37AE;
     outline: none;
     font-size: 16px;
 }
 
 .btn:hover {
-    border-color: black;
+    background-color: #0AD390;
+    color: white;
 }
 
 #text {
     font-size: 18px;
+    font-weight: 300;
+    color: #03EC70;
+    width: 90%;
+    padding-left: 4%;
 }
