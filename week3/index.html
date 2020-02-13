@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Responsive Web Design - 5 media queries</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      <header>
+          <nav>
+              <p href="">NYC Public Restroom</p>
+          </nav>
+      </header>
+      <main>
+          <form action="/action_page.php">
+              <div class="input-container filter">
+                  <input class="input-field" type="text" placeholder="Search Address" name="usrnm">
+                  <i class="fa fa-search icon"></i>
+              </div>
+              <div class="select-container filter">
+                  <select id="district">
+                      <option value="all">All Districts</option>
+                      <option value="bronx">Bronx</option>
+                      <option value="brooklyn">Brooklyn</option>
+                      <option value="queens">Queens</option>
+                  </select>
+              </div>
+
+
+              <div class="check filter">
+                  <input type="radio" id="access">
+                  <label for="access">Accessibility</label>
+              </div>
+
+
+              <div class="check filter">
+                  <input type="radio" id="open">
+                  <label for="open">Open Now</label>
+              </div>
+
+          </form>
+          <svg width="100%" height="600">
+              <rect width="100%" height="600" style="fill:none;stroke-width:2;stroke:darkgray" />
+          </svg>
+
+      </main>
+
+
+      <script src="script.js"></script>
+  </body>
+
+  </html>

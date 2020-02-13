@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700';
+
+body {
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body,
+a {
+    margin: 0;
+    color: black;
+}
+
+.clear {
+    clear: both;
+}
+
+
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+header #desktop {
+    display: none;
+}
+
+header nav p {
+    padding: 4vh 2vh;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+main {
+    padding-top: 150px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+.icon {
+    padding: 10px;
+    background: darkgray;
+    color: white;
+    width: 30px;
+    text-align: center;
+    border: darkgray;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.select-container {
+    display: flex;
+    width: 100%;
+}
+
+#district {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: none;
+}
+
+select option {
+    background-color: none;
+}
+
+.check div {
+    width: 50%;
+}
+
+form div {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+@media screen and (min-device-width: 668px){
+    header nav{
+        margin-left: 5vw;
+    }
+	header nav p {
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .input-container {
+        width: 25%;
+    }
+
+    .select-container {
+        width: 25%;
+    }
+
+    .check {
+        width: 25%;
+    }
+
+
+    form {
+        display: flex
+    }
+
+    .filter {
+        padding-right: 5vw;
+    }
+
+
+}
