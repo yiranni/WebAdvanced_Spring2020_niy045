@@ -40,8 +40,8 @@ header nav p {
 
 main {
     padding-top: 150px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 20vw;
 }
 
 .input-container {
@@ -96,6 +96,27 @@ form div {
     margin-bottom: 30px;
 }
 
+.wrapper {
+    margin-bottom: 2em;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+
+.wrapper a:hover {
+    color: rgb(14, 1, 160);
+    text-decoration: underline;
+}
+.small {
+    height: 1em;
+    overflow:hidden;
+   
+}
+.big {
+    height: auto;
+}
 
 
 
