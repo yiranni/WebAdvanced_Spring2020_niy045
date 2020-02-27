@@ -41,7 +41,7 @@ header nav p {
 main {
     padding-top: 150px;
     padding-left: 10vw;
-    padding-right: 20vw;
+    padding-right: 10vw;
 }
 
 .input-container {
@@ -118,7 +118,26 @@ form div {
     height: auto;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
 
+    margin-bottom: 2em;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #999;
+}
+th {
+    background: #ccc;
+}
+tr:nth-child(odd) {
+    background: #eee;
+}
+td a {
+    color: #000;
+    text-decoration: underline;
+}
 
 
 

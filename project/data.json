@@ -1,0 +1,25 @@
+{
+    "data": [
+        {   
+            "district": "Bronx",
+            "name": "227th Street Playground",
+            "location": "Bronx Boulevard between East 226 and East 228 streets",
+            "open": true,
+            "accessibility": true
+        },
+        {
+            "district": "Brooklyn",
+            "name": "100% Playground",
+            "location": "Glenwood Road, East 100 & East 101 streets",
+            "open": true,
+            "accessibility": false
+        },
+        {
+            "district": "Manhattan",
+            "name": "119th Street Tennis Courts",
+            "location": "119th Street on the middle level",
+            "open": true,
+            "accessibility": false
+        }
+    ]
+}
