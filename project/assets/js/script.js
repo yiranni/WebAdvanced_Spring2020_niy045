@@ -1,15 +1,30 @@
+
+$.ajax({
+    url: "https://data.cityofnewyork.us/resource/buk3-3qpr.json",
+    type: "GET",
+    data: {
+      "$limit" : 5000,
+      "$$app_token" : "ywjdiw9kJXaTv85lSVH57QJE3"
+    }
+}).done(function(data) {
+   
+   console.log(data)
+});
+
+
 $('.wrapper').find('a[href="#"]').on('click', function (e) {
     e.preventDefault();
     this.expand = !this.expand;
     $(this).text(this.expand ? "Click to collapse" : "Click to read more");
     $(this).closest('.wrapper').find('.small, .big').toggleClass('small big');
 });
+
 window.addEventListener('DOMContentLoaded', function () {
-    loadData();
+    loadData("/data.json");
 });
 
-function loadData() {
-    $.getJSON("/data.json", (data) => {
+function loadData(data) {
+    $.getJSON(data, (data) => {
         generateTable(data)
     })
 }
@@ -21,6 +36,9 @@ generateTable = (data) => {
     list.append(result)
 
 }
+
+// loadData()
+
 
 
 // var data = {
