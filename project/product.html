@@ -18,12 +18,35 @@
     <!-- <script src="assets/lib/jquery-3.4.1.js"></script>
     <script src="assets/lib/bootstrap.js"></script> -->
     <!-- Font Awesome -->
+    <script src="assets/js/d3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src=""></script>
 
 
-    <title>Dig Ground Landing Site</title>
-</head>
+    <title>Badminton Analysis</title>
+    <style>
+        #court-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        #court-content-responsive {
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+
+        .selected {
+            fill: black;
+        }
+
+    </style>
 
 <body>
     <div id="header">
@@ -48,38 +71,9 @@
         </nav>
     </div>
     <main>
-        <!-- <div id="header">Header</div> -->
-        <!-- <div id="fullpage"> -->
-        <div class="section">
-            <div class="intro">
-                <h1 class="title">
-                    Our Data Is Bigger Than Yours
-                </h1>
-                <p class="descr">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.
-                </p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="intro">
-                <h1 class="title">
-                    Our Data Is Bigger Than Yours
-                </h1>
-                <p class="descr">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.
-                </p>
-            </div>
-        </div>
+        <div id="court"></div>
+        <div id='chart'></div>
+        <script type='module' src="assets/js/badminton.js"></script>
     </main>
     <!-- </div> -->
 
