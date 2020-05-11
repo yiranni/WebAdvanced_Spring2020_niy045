@@ -1,4 +1,4 @@
-# final
+# Global Journey of Zoonotic Disease
 
 > My fine Nuxt.js project
 
